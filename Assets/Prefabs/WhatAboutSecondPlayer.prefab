@@ -106,8 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78cfd26be51510d4fa219abe729f0633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XPlusPlusWhenWPressed
-  playerOne: 0
-  playerTwo: 0
+  hitboxNormal: {fileID: 102445455094883059}
+  hitboxHeavy: {fileID: 2357670785312725047}
   nextPlayerPrefab: {fileID: 7776536367882475737, guid: 68e805f0336b9ae488bc4676b3d1ae0a, type: 3}
 --- !u!114 &3023314323374903060
 MonoBehaviour:

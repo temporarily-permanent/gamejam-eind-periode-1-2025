@@ -5,17 +5,10 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     private Controls controls;
-    public enum playerState
-    {
-        up,
-        left,
-        down,
-        right,
-        none
-    }
 
-    public playerState playerOne;
-    public playerState playerTwo;
+
+    [SerializeField] private GameObject hitboxNormal;
+    [SerializeField] private GameObject hitboxHeavy;
     
     private PlayerInput playerInput;
     private GameObject playerInputManager;
@@ -35,22 +28,31 @@ public class InputManager : MonoBehaviour
     {
         Vector2 move = value.Get<Vector2>();
         transform.position += new Vector3(move.x, 0, move.y) * Time.deltaTime;
-        Debug.Log("MOVED");
+        //Debug.Log("MOVED");
     }
 
 
     void OnAttack()
     {
+        Debug.Log("Attack");
         // todo logic
     }
      
     void OnHeavyAttack()
     {
+        Debug.Log("Heavy Attack");
         // todo logic
     }
     void OnJump()
     {
+        Debug.Log("Jump");
         // todo logic
+    }
+
+    void OnBlock()
+    {
+        Debug.Log("Block");
+        // todo logic (could have)
     }
 
     // Update is called once per frame
