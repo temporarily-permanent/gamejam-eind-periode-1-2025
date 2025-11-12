@@ -102,19 +102,10 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Look"",
-                    ""type"": ""Value"",
-                    ""id"": ""6b444451-8a00-4d00-a97e-f47457f736a8"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
                     ""name"": ""Attack"",
                     ""type"": ""Button"",
                     ""id"": ""6c2ab1b8-8984-453a-af3d-a3c78ae1679a"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -168,7 +159,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""name"": ""Sprint"",
                     ""type"": ""Button"",
                     ""id"": ""641cd816-40e6-41b4-8c3d-04687c349290"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -339,39 +330,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c1f7a91b-d0fd-4a62-997e-7fb9b69bf235"",
-                    ""path"": ""<Gamepad>/rightStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Gamepad"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8c8e490b-c610-4785-884f-f04217b23ca4"",
-                    ""path"": ""<Pointer>/delta"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse;Touch"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3e5f5442-8668-4b27-a940-df99bad7e831"",
-                    ""path"": ""<Joystick>/{Hatswitch}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Joystick"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
@@ -596,7 +554,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             ]
         },
         {
-            ""name"": ""New action map"",
+            ""name"": ""WhatAboutSecondPlayer"",
             ""id"": ""87bdce03-2a2f-4a32-a69f-920e1c694407"",
             ""actions"": [
                 {
@@ -604,6 +562,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""type"": ""Button"",
                     ""id"": ""e5cb1284-a754-43d8-86b6-36c21d1927e2"",
                     ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""e957d12f-bd87-4c3f-99ed-267939557761"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -631,6 +598,171 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""whatAboutSecondPlayer"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""8e031e8f-0467-4578-8b74-1657c414a180"",
+                    ""path"": ""Dpad(mode=1)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""28c886ad-41fb-42ca-9f7d-35ad34181d81"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""568f04d2-e0e8-44c0-8eea-7df2812fcfa0"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""1ac6488a-745f-4f0f-af2b-541598a4db16"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""bd0cc796-469f-4804-b494-4f2b876ee94c"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""5b904a82-a1c3-4f3f-84c7-4fd48a78b46a"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""5be28a86-0f9a-4826-9260-618fe8561a4e"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""23782604-792f-48c8-b528-7796da283a81"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""cbaa4ff6-83c9-4edf-9284-c6c9a71a66de"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""80f7a7ff-4d36-4506-b697-6cc4187e99ab"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d7636594-fc69-4c94-8ce2-f21ee3bc18d8"",
+                    ""path"": ""<XRController>/{Primary2DAxis}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""XR"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d4657d92-872b-45aa-9f0c-b51ab5b0cdfc"",
+                    ""path"": ""<Joystick>/stick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Joystick"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""51ada317-05ea-407c-9324-14f191e6b134"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Modifier"",
+                    ""id"": ""dc5de5f3-95e5-4bf3-9aa3-b53773dfdfa2"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Binding"",
+                    ""id"": ""c5a20bff-feb0-4d7f-afea-a85ff2c866cc"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         },
@@ -1211,13 +1343,23 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""isOR"": false
                 }
             ]
+        },
+        {
+            ""name"": ""WhatAboutSecondControllScheme"",
+            ""bindingGroup"": ""WhatAboutSecondControllScheme"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
         }
     ]
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
-        m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Crouch = m_Player.FindAction("Crouch", throwIfNotFound: true);
@@ -1225,9 +1367,10 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Player_Previous = m_Player.FindAction("Previous", throwIfNotFound: true);
         m_Player_Next = m_Player.FindAction("Next", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
-        // New action map
-        m_Newactionmap = asset.FindActionMap("New action map", throwIfNotFound: true);
-        m_Newactionmap_whatAboutSecondPlayer = m_Newactionmap.FindAction("whatAboutSecondPlayer", throwIfNotFound: true);
+        // WhatAboutSecondPlayer
+        m_WhatAboutSecondPlayer = asset.FindActionMap("WhatAboutSecondPlayer", throwIfNotFound: true);
+        m_WhatAboutSecondPlayer_whatAboutSecondPlayer = m_WhatAboutSecondPlayer.FindAction("whatAboutSecondPlayer", throwIfNotFound: true);
+        m_WhatAboutSecondPlayer_Move = m_WhatAboutSecondPlayer.FindAction("Move", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1245,7 +1388,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     ~@Controls()
     {
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, Controls.Player.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_Newactionmap.enabled, "This will cause a leak and performance issues, Controls.Newactionmap.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_WhatAboutSecondPlayer.enabled, "This will cause a leak and performance issues, Controls.WhatAboutSecondPlayer.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_UI.enabled, "This will cause a leak and performance issues, Controls.UI.Disable() has not been called.");
     }
 
@@ -1323,7 +1466,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player;
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
-    private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Attack;
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_Crouch;
@@ -1346,10 +1488,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Move".
         /// </summary>
         public InputAction @Move => m_Wrapper.m_Player_Move;
-        /// <summary>
-        /// Provides access to the underlying input action "Player/Look".
-        /// </summary>
-        public InputAction @Look => m_Wrapper.m_Player_Look;
         /// <summary>
         /// Provides access to the underlying input action "Player/Attack".
         /// </summary>
@@ -1407,9 +1545,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
-            @Look.started += instance.OnLook;
-            @Look.performed += instance.OnLook;
-            @Look.canceled += instance.OnLook;
             @Attack.started += instance.OnAttack;
             @Attack.performed += instance.OnAttack;
             @Attack.canceled += instance.OnAttack;
@@ -1445,9 +1580,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
             @Move.canceled -= instance.OnMove;
-            @Look.started -= instance.OnLook;
-            @Look.performed -= instance.OnLook;
-            @Look.canceled -= instance.OnLook;
             @Attack.started -= instance.OnAttack;
             @Attack.performed -= instance.OnAttack;
             @Attack.canceled -= instance.OnAttack;
@@ -1503,29 +1635,34 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     /// </summary>
     public PlayerActions @Player => new PlayerActions(this);
 
-    // New action map
-    private readonly InputActionMap m_Newactionmap;
-    private List<INewactionmapActions> m_NewactionmapActionsCallbackInterfaces = new List<INewactionmapActions>();
-    private readonly InputAction m_Newactionmap_whatAboutSecondPlayer;
+    // WhatAboutSecondPlayer
+    private readonly InputActionMap m_WhatAboutSecondPlayer;
+    private List<IWhatAboutSecondPlayerActions> m_WhatAboutSecondPlayerActionsCallbackInterfaces = new List<IWhatAboutSecondPlayerActions>();
+    private readonly InputAction m_WhatAboutSecondPlayer_whatAboutSecondPlayer;
+    private readonly InputAction m_WhatAboutSecondPlayer_Move;
     /// <summary>
-    /// Provides access to input actions defined in input action map "New action map".
+    /// Provides access to input actions defined in input action map "WhatAboutSecondPlayer".
     /// </summary>
-    public struct NewactionmapActions
+    public struct WhatAboutSecondPlayerActions
     {
         private @Controls m_Wrapper;
 
         /// <summary>
         /// Construct a new instance of the input action map wrapper class.
         /// </summary>
-        public NewactionmapActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public WhatAboutSecondPlayerActions(@Controls wrapper) { m_Wrapper = wrapper; }
         /// <summary>
-        /// Provides access to the underlying input action "Newactionmap/whatAboutSecondPlayer".
+        /// Provides access to the underlying input action "WhatAboutSecondPlayer/whatAboutSecondPlayer".
         /// </summary>
-        public InputAction @whatAboutSecondPlayer => m_Wrapper.m_Newactionmap_whatAboutSecondPlayer;
+        public InputAction @whatAboutSecondPlayer => m_Wrapper.m_WhatAboutSecondPlayer_whatAboutSecondPlayer;
+        /// <summary>
+        /// Provides access to the underlying input action "WhatAboutSecondPlayer/Move".
+        /// </summary>
+        public InputAction @Move => m_Wrapper.m_WhatAboutSecondPlayer_Move;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
-        public InputActionMap Get() { return m_Wrapper.m_Newactionmap; }
+        public InputActionMap Get() { return m_Wrapper.m_WhatAboutSecondPlayer; }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
         public void Enable() { Get().Enable(); }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
@@ -1533,9 +1670,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
         public bool enabled => Get().enabled;
         /// <summary>
-        /// Implicitly converts an <see ref="NewactionmapActions" /> to an <see ref="InputActionMap" /> instance.
+        /// Implicitly converts an <see ref="WhatAboutSecondPlayerActions" /> to an <see ref="InputActionMap" /> instance.
         /// </summary>
-        public static implicit operator InputActionMap(NewactionmapActions set) { return set.Get(); }
+        public static implicit operator InputActionMap(WhatAboutSecondPlayerActions set) { return set.Get(); }
         /// <summary>
         /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
         /// </summary>
@@ -1543,14 +1680,17 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         /// <remarks>
         /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
         /// </remarks>
-        /// <seealso cref="NewactionmapActions" />
-        public void AddCallbacks(INewactionmapActions instance)
+        /// <seealso cref="WhatAboutSecondPlayerActions" />
+        public void AddCallbacks(IWhatAboutSecondPlayerActions instance)
         {
-            if (instance == null || m_Wrapper.m_NewactionmapActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_NewactionmapActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_WhatAboutSecondPlayerActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_WhatAboutSecondPlayerActionsCallbackInterfaces.Add(instance);
             @whatAboutSecondPlayer.started += instance.OnWhatAboutSecondPlayer;
             @whatAboutSecondPlayer.performed += instance.OnWhatAboutSecondPlayer;
             @whatAboutSecondPlayer.canceled += instance.OnWhatAboutSecondPlayer;
+            @Move.started += instance.OnMove;
+            @Move.performed += instance.OnMove;
+            @Move.canceled += instance.OnMove;
         }
 
         /// <summary>
@@ -1559,21 +1699,24 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         /// <remarks>
         /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
         /// </remarks>
-        /// <seealso cref="NewactionmapActions" />
-        private void UnregisterCallbacks(INewactionmapActions instance)
+        /// <seealso cref="WhatAboutSecondPlayerActions" />
+        private void UnregisterCallbacks(IWhatAboutSecondPlayerActions instance)
         {
             @whatAboutSecondPlayer.started -= instance.OnWhatAboutSecondPlayer;
             @whatAboutSecondPlayer.performed -= instance.OnWhatAboutSecondPlayer;
             @whatAboutSecondPlayer.canceled -= instance.OnWhatAboutSecondPlayer;
+            @Move.started -= instance.OnMove;
+            @Move.performed -= instance.OnMove;
+            @Move.canceled -= instance.OnMove;
         }
 
         /// <summary>
-        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="NewactionmapActions.UnregisterCallbacks(INewactionmapActions)" />.
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="WhatAboutSecondPlayerActions.UnregisterCallbacks(IWhatAboutSecondPlayerActions)" />.
         /// </summary>
-        /// <seealso cref="NewactionmapActions.UnregisterCallbacks(INewactionmapActions)" />
-        public void RemoveCallbacks(INewactionmapActions instance)
+        /// <seealso cref="WhatAboutSecondPlayerActions.UnregisterCallbacks(IWhatAboutSecondPlayerActions)" />
+        public void RemoveCallbacks(IWhatAboutSecondPlayerActions instance)
         {
-            if (m_Wrapper.m_NewactionmapActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_WhatAboutSecondPlayerActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
@@ -1583,21 +1726,21 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         /// <remarks>
         /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
         /// </remarks>
-        /// <seealso cref="NewactionmapActions.AddCallbacks(INewactionmapActions)" />
-        /// <seealso cref="NewactionmapActions.RemoveCallbacks(INewactionmapActions)" />
-        /// <seealso cref="NewactionmapActions.UnregisterCallbacks(INewactionmapActions)" />
-        public void SetCallbacks(INewactionmapActions instance)
+        /// <seealso cref="WhatAboutSecondPlayerActions.AddCallbacks(IWhatAboutSecondPlayerActions)" />
+        /// <seealso cref="WhatAboutSecondPlayerActions.RemoveCallbacks(IWhatAboutSecondPlayerActions)" />
+        /// <seealso cref="WhatAboutSecondPlayerActions.UnregisterCallbacks(IWhatAboutSecondPlayerActions)" />
+        public void SetCallbacks(IWhatAboutSecondPlayerActions instance)
         {
-            foreach (var item in m_Wrapper.m_NewactionmapActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_WhatAboutSecondPlayerActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_NewactionmapActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_WhatAboutSecondPlayerActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
     /// <summary>
-    /// Provides a new <see cref="NewactionmapActions" /> instance referencing this action map.
+    /// Provides a new <see cref="WhatAboutSecondPlayerActions" /> instance referencing this action map.
     /// </summary>
-    public NewactionmapActions @Newactionmap => new NewactionmapActions(this);
+    public WhatAboutSecondPlayerActions @WhatAboutSecondPlayer => new WhatAboutSecondPlayerActions(this);
 
     // UI
     private readonly InputActionMap m_UI;
@@ -1858,6 +2001,19 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             return asset.controlSchemes[m_XRSchemeIndex];
         }
     }
+    private int m_WhatAboutSecondControllSchemeSchemeIndex = -1;
+    /// <summary>
+    /// Provides access to the input control scheme.
+    /// </summary>
+    /// <seealso cref="UnityEngine.InputSystem.InputControlScheme" />
+    public InputControlScheme WhatAboutSecondControllSchemeScheme
+    {
+        get
+        {
+            if (m_WhatAboutSecondControllSchemeSchemeIndex == -1) m_WhatAboutSecondControllSchemeSchemeIndex = asset.FindControlSchemeIndex("WhatAboutSecondControllScheme");
+            return asset.controlSchemes[m_WhatAboutSecondControllSchemeSchemeIndex];
+        }
+    }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Player" which allows adding and removing callbacks.
     /// </summary>
@@ -1872,13 +2028,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnMove(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Look" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnLook(InputAction.CallbackContext context);
         /// <summary>
         /// Method invoked when associated input action "Attack" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
@@ -1930,11 +2079,11 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnSprint(InputAction.CallbackContext context);
     }
     /// <summary>
-    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "New action map" which allows adding and removing callbacks.
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "WhatAboutSecondPlayer" which allows adding and removing callbacks.
     /// </summary>
-    /// <seealso cref="NewactionmapActions.AddCallbacks(INewactionmapActions)" />
-    /// <seealso cref="NewactionmapActions.RemoveCallbacks(INewactionmapActions)" />
-    public interface INewactionmapActions
+    /// <seealso cref="WhatAboutSecondPlayerActions.AddCallbacks(IWhatAboutSecondPlayerActions)" />
+    /// <seealso cref="WhatAboutSecondPlayerActions.RemoveCallbacks(IWhatAboutSecondPlayerActions)" />
+    public interface IWhatAboutSecondPlayerActions
     {
         /// <summary>
         /// Method invoked when associated input action "whatAboutSecondPlayer" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
@@ -1943,6 +2092,13 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnWhatAboutSecondPlayer(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Move" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnMove(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
